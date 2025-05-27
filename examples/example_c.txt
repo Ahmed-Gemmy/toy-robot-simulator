@@ -4,3 +4,6 @@ MOVE
 LEFT
 MOVE
 REPORT
+
+# Expected OUTPUT
+# 3,3,NORTH

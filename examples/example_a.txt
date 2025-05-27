@@ -1,3 +1,6 @@
 PLACE 0,0,NORTH
 MOVE
 REPORT
+
+# Expected OUTPUT
+# 0,1,NORTH

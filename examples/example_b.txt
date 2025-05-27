@@ -1,3 +1,6 @@
 PLACE 0,0,NORTH
 LEFT
 REPORT
+
+# Expected OUTPUT
+# 0,0,WEST

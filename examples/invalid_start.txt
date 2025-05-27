@@ -5,3 +5,7 @@ REPORT
 PLACE 2,2,SOUTH
 MOVE
 REPORT
+
+# Expected OUTPUT
+# 2,1,SOUTH
+# All command are ignored until a valid PLACE
