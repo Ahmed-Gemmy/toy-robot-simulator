@@ -1,4 +1,5 @@
 from command.base import Command
 
 class LeftCommand(Command):
-    pass
+    def execute(self, robot: "Robot") -> None:
+        robot.turn_left()
