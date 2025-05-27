@@ -1,2 +1,6 @@
+from dataclasses import dataclass
+
+@dataclass
 class Position:
-    pass
+    x: int
+    y: int
