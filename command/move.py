@@ -1,4 +1,5 @@
 from command.base import Command
 
 class MoveCommand(Command):
-    pass
+    def execute(self, robot: "Robot") -> None:
+        robot.move()
