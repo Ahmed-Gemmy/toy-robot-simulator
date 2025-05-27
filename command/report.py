@@ -1,4 +1,5 @@
 from command.base import Command
 
 class ReportCommand(Command):
-    pass
+    def execute(self, robot: "Robot") -> None:
+        return robot.report()
