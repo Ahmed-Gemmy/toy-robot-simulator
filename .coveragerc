@@ -1,0 +1,12 @@
+[run]
+branch = True
+source =
+    .
+omit =
+    main.py
+    tests/*
+    */__init__.py
+
+[report]
+show_missing = True
+skip_covered = True
