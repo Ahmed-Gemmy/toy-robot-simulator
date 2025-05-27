@@ -12,9 +12,11 @@ class Simulator:
     def execute(self, line:str):
         command = CommandFactory.create(line)
         if command is None:
-            return
+            return None
 
         result = command.execute(self.robot)
 
         if isinstance(result, str): # Only report command can return string
             self.last_report = result
+            return result
+        return None

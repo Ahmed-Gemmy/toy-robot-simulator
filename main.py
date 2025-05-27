@@ -6,9 +6,9 @@ def run_simulator(file_path):
     try:
         with open(file_path, 'r') as f:
             for line in f:
-                sim.execute(line.strip())
-                if sim.last_report:
-                    print(sim.last_report)
+                result = sim.execute(line.strip())
+                if isinstance(result, str):
+                    print(result)
     except FileNotFoundError:
         print(f"Error: File '{file_path}' not found.")
     except Exception as e:
