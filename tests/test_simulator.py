@@ -28,7 +28,7 @@ class SimulatorTest(unittest.TestCase):
         self.assertEqual(self.sim.last_report, "0,0,EAST")
 
         # Rotating back
-        self.sim.execute("RIGHT")
+        self.sim.execute("LEFT")
         self.sim.execute("REPORT")
         self.assertEqual(self.sim.last_report, "0,0,NORTH")
 
