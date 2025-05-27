@@ -10,7 +10,7 @@ from direction import Direction
 class TestPlaceCommand(unittest.TestCase):
     def setUp(self):
         self.table = Table()
-        self.robot = Robot()
+        self.robot = Robot(self.table)
 
     def test_valid_place(self):
         cmd = PlaceCommand(2, 3, Direction.NORTH)
